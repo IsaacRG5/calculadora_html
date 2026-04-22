@@ -1,25 +1,31 @@
 body {
-
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background: #c4c2c2;
+  font-family: Arial, sans-serif;
 }
 
 .calculadora {
-  background-image: url(img.webp);
+  background: #f4f1fa;
   padding: 20px;
   border: 2px solid #7c648a;
   border-radius: 10px;
   box-shadow: 0 10px 10px #5a5454;
 }
 
-#pantalla {
+.inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.inputs input {
+  width: 45px;
   height: 40px;
-  margin-bottom: 10px;
-  text-align: right;
-  font-size: 18px;
+  font-size: 16px;
   padding: 5px;
   border: 2px solid #7c648a;
   border-radius: 10px;
@@ -27,10 +33,9 @@ body {
 
 .botones {
   display: grid;
-  grid-template-columns: repeat(4, 50px);
+  grid-template-columns: repeat(4, 60px);
   gap: 10px;
-  justify-content:center ;
-
+  justify-content: center;
 }
 
 button {
@@ -38,5 +43,11 @@ button {
   font-size: 18px;
   cursor: pointer;
   border-radius: 10px;
-  border: 2px solid #7c648a;
+  border: none;
+  background: #7c648a;
+  color: white;
+}
+
+button:hover {
+  background: #684f76;
 }
